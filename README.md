@@ -1,2 +1,3 @@
 # FindRickCharacters
-Created with CodeSandbox
+Search for Rick and Morty characters by search parameters
+
