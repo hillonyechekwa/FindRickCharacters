@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { getCharacter } from "rickmortyapi";
-import Carousel from "./Carousel";
 
 class Details extends Component {
   state = {
