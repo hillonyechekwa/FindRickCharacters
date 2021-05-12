@@ -1,4 +1,167 @@
-.App {
-  font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Manrope:wght@400;500&display=swap');
+
+
+:root{
+ --primary: #97ce4c;
+ --accent: 	#44281d;
+ --teritary: #f0e14a;
+ --title-font: 'Manrope', sans-serif;
+ --text-font: 'Caveat', sans-serif;
+}
+
+
+*{
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--primary);
+  width: 100vw;
+}
+
+
+.character-search{
+  padding: 3px;
+}
+
+.character-search form{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+  grid-template-columns: repeat(1fr, minmax(250px));
+}
+
+.character-search h1{
+  font-family: var(--title-font);
+  font-size: 3rem;
+  font-weight: 500;
   text-align: center;
 }
+
+.character-search form label{
+  font-family: var(--text-font);
+}
+
+.character-search form input{
+  border: none;
+  background: none;
+  border-bottom: 2px solid var(--accent);
+  outline: none;
+  margin-left: 5px;
+}
+
+
+.character-search form select{
+  border: none;
+  background: none;
+  border-bottom: 2px solid var(--accent);
+  outline: none;
+  margin-left: 5px;
+}
+
+
+.character-search button{
+  border: none;
+  width: 250px;
+  height: 50px;
+  text-transform: capitalize;
+  font-family: var(--title-font);
+  font-weight: bolder;
+  font-size: 2rem;
+  background-color: var(--teritary);
+  transition: background-color 0.5s linear 1s;
+}
+
+.character-search button:hover{
+    background-color: var(--accent);
+    color: white;
+}
+
+
+.results{
+  margin-top: 50px;
+}
+
+.person{
+  background-color: var(--teritary);
+  transition: background-color .5s ease 1s;
+  padding: 10px;
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+
+.person img{
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+}
+
+.person{
+  text-decoration: none;
+}
+
+
+.person .info h1{
+  margin-right: 20px;
+  font-family: var(--title-font);
+  color: #000;
+  font-weight: bolder;
+}
+
+.person .info h2{
+  font-family: var(--text-font);
+  color: var(--accent);
+}
+
+.person:hover{
+  background-color: whitesmoke;
+}
+
+
+.home-container{
+  padding: 5px;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(1fr, minmax(200px));
+}
+
+.home-container img{
+  width: 500px;
+  height: 300px;
+  border: 3px solid var(--teritary);
+}
+
+
+.home-container h1{
+  font-family: var(--title-font);
+  color: var(--accent);
+  font-size: 3rem;
+}
+
+
+.home-container p{
+  font-family: var(--text-font);
+  color: whitesmoke;
+}
+
+
+.home-container .go-char{
+  text-decoration: none;
+}
+
+.home-container .go-char button{
+  background: none;
+  border: 2px solid var(--accent);
+}
+
+
+

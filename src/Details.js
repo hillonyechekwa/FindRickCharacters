@@ -38,7 +38,7 @@ class Details extends Component {
     } = this.state;
 
     return (
-      <div>
+      <div className="details">
         <img src={media} alt="character" />
         <h1>Name: {name}</h1>
         <h2>Status: {status}</h2>

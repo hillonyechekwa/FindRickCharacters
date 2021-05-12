@@ -15,7 +15,7 @@ const Person = (props) => {
   } = props;
 
   return (
-    <Link to={`/details/${id}`}>
+    <Link className="person" to={`/details/${id}`}>
       <div className="image-container">
         <img src={media} alt={name} />
       </div>

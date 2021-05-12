@@ -5,7 +5,7 @@ import Person from './Person'
 
 const Results = ({chars}) => {
   return (
-    <div>
+    <div className="results">
       {!chars.length ?(
          <h1>No Characters Found</h1>
       ):(chars.map(char => {
